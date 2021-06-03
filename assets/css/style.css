@@ -603,6 +603,11 @@ img {
 }
 
 .footer {
+    position: relative;
+    width: 100%;
+    height: 55vh;
+    background: #ffffff;
+    overflow: hidden;
     background-color: var(--first-color-darken);
     color: var(--first-color-lighten);
     text-align: center;
@@ -632,7 +637,7 @@ img {
     transition: .3s;
 }
 
-.foter__link:hover {
+.footer__link:hover {
     background-color: var(--first-color-lighten);
     color: var(--first-color);
 }
@@ -640,6 +645,7 @@ img {
 .footer__copy {
     font-size: var(--smaller-font-size);
     color: var(--TEXT-color);
+    margin-bottom: 100px;
 }
 
 @media screen and (min-width: 768px) {
@@ -718,9 +724,11 @@ img {
         width: 0;
     }
     .nav__toggle,
-    .nav__logo,
     .nav__close {
         display: none;
+    }
+    .nav__logo {
+        margin-right: 1000px;
     }
     .nav__menu {
         left: 0;
@@ -738,5 +746,145 @@ img {
     .services__container,
     .works__container {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.typing>* {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typingAnim 3s steps(30) infinite normal;
+}
+
+@keyframes typingAnim {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+/* typing animation 2 */
+
+.loader {
+    position: relative;
+    --webkit-box-reflect: below -20px linear-gradient (transparent, #0002);
+}
+
+.loader::before {
+    content: '';
+    position: absolute;
+    top: 7;
+    right: 0;
+    width: 2px;
+    height: 65%;
+    background: #0c0c0c;
+    animation: udin 10000s steps(3) infinite;
+}
+
+@keyframes udin {
+    0%,
+    75% {
+        opacity: 1;
+    }
+    76%,
+    100% {
+        opacity: 0;
+    }
+}
+
+.loader h1 {
+    position: relative;
+    white-space: nowrap;
+    animation: typing 3s steps(20) infinite;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 20px) {
+    @keyframes typing {
+        0%,
+        90%,
+        100% {
+            width: 0;
+        }
+        30%,
+        60% {
+            width: 155.53px;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    @keyframes typing {
+        0%,
+        90%,
+        100% {
+            width: 0;
+        }
+        30%,
+        60% {
+            width: 237.53px;
+        }
+    }
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../img/wave.png);
+    background-size: 1000px 100px;
+}
+
+.wave.wave1 {
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+
+.wave.wave2 {
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+
+.wave.wave3 {
+    animation: animate 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15;
+}
+
+.wave.wave4 {
+    animation: animate2 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: -1000px;
     }
 }
