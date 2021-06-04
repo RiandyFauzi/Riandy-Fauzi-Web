@@ -28,15 +28,23 @@
             </div>
 
             <div class="typing">
-                <h5 class="nav__logo">Riandy Fauzi. </h5>
+                <h5 class="nav__logo">Riandy Fauzi.... </h5>
             </div>
 
             <div class="nav__menu" id="nav-menu">
                 <div class="nav__close" id="nav-close">
                     <i class='bx bx-x'></i>
+
                 </div>
 
                 <ul class="nav__list">
+
+                    <li class="nav__item mode">
+                        <label class="mode">
+                                <a class="warna" onclick="setDarkMode(true)">Night |</a>
+                                <a class="warna" onclick="setDarkMode(false)">Day</a>
+                        </label>
+                    </li>
                     <li class="nav__item">
                         <a href="#home" class="nav__link ">Home</a>
                     </li>
@@ -62,18 +70,18 @@
     </header>
 
 
-    <main class="l-main">
+    <main class="l-main" style="margin-top: 0px;" id="home">
+        <br><br><br><br><br><br>
+        <section class="home">
 
+            <div class="home__container bd-grid" id="particles-js">
 
-
-
-        <section class="home" id="home">
-
-            <div class="home__container bd-grid">
                 <div class="home__data">
+
                     <div class="home__img">
                         <img src="assets/img/riandy.jpg" alt="">
                     </div>
+
 
 
                     <div class="loader">
@@ -90,6 +98,8 @@
 
                     <a href="#" class="button home__button">Download Resume</a>
                 </div>
+
+
 
             </div>
         </section>
@@ -447,7 +457,7 @@
         </section>
 
     </main>
-    < <footer class="footer section">
+    <footer class="footer section">
 
         <div class="wave wave1"></div>
         <div class="wave wave2"></div>
@@ -467,10 +477,12 @@
 
             <p class="footer__copy">All right reserved by riandy - 2021</p>
         </div>
-        </footer>
+    </footer>
 
-
-        <script src="assets/js/main.js"></script>
+    <script id="particles-js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>
