@@ -725,6 +725,7 @@
         }
         .nav__logo {
             margin-right: 1000px;
+            margin-bottom: -100px;
         }
         .nav__menu {
             left: 0;
@@ -749,6 +750,8 @@
         overflow: hidden;
         white-space: nowrap;
         animation: typingAnim 3s steps(30) infinite normal;
+        margin-bottom: -2px;
+        font-size: 14px;
     }
     
     @keyframes typingAnim {
