@@ -1009,3 +1009,7 @@
         margin-bottom: -100px;
         padding: 10px;
     }
+    
+    .container-fluid {
+        margin-left: -1000px;
+    }
