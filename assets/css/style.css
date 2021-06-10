@@ -712,6 +712,9 @@
         .exp {
             width: 10px;
         }
+        .panjangan {
+            margin-left: 100px;
+        }
     }
     
     @media screen and (min-width: 1024px) {
