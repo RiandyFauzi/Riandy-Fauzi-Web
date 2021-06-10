@@ -711,9 +711,22 @@
         }
         .exp {
             width: 10px;
+            margin: 1px;
         }
         .panjangan {
             margin-left: 100px;
+        }
+        .tales {
+            width: 100%;
+        }
+        .carousel-item {
+            width: 100%;
+            max-height: 100%!important;
+        }
+        .carousel {
+            padding: 85px;
+            width: 1%;
+            margin: auto;
         }
     }
     
@@ -749,6 +762,24 @@
         .services__container,
         .works__container {
             grid-template-columns: repeat(3, 1fr);
+        }
+        .exp {
+            margin: 19.92px;
+        }
+        .panjangan {
+            margin-left: 0;
+        }
+        .tales {
+            width: 100%;
+        }
+        .carousel-item {
+            width: 40%;
+            max-height: 100%!important;
+        }
+        .carousel {
+            padding: 85px;
+            width: 70%;
+            margin: auto;
         }
     }
     
@@ -980,19 +1011,6 @@
     .body #particles-js {
         height: 1100%;
         margin-top: 10px;
-    }
-    
-    .tales {
-        width: 100%;
-    }
-    
-    .carousel-item {
-        width: 100%;
-        max-height: 100%!important;
-    }
-    
-    .carousel {
-        padding: 15px;
     }
     
     .icon1 {
