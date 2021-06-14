@@ -764,7 +764,15 @@
             grid-template-columns: repeat(3, 1fr);
         }
         .exp {
-            margin: 19.92px;
+            margin: 10px;
+        }
+        .exp img {
+            width: 100px;
+        }
+        div .row {
+            margin-left: 80;
+            padding-left: 60px;
+            padding-right: 100px;
         }
         .panjangan {
             margin-left: 0;
@@ -777,7 +785,7 @@
             max-height: 100%!important;
         }
         .carousel {
-            padding: 85px;
+            padding: 80px;
             width: 70%;
             margin-top: -70px;
         }
@@ -1011,6 +1019,7 @@
     .body #particles-js {
         height: 1100%;
         margin-top: 10px;
+        position: absolute;
     }
     
     .icon1 {
@@ -1027,8 +1036,8 @@
     
     .card-text {
         text-align: center;
-        margin-bottom: -100px;
         padding: 10px;
+        padding-left: -800%;
     }
     
     .container-fluid {
