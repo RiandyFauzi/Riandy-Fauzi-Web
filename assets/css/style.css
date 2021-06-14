@@ -214,9 +214,9 @@
     }
     
     .home__img {
-        padding-top: 1.3rem;
-        padding-left: .8rem;
-        width: 160px;
+        padding-top: 0rem;
+        padding-left: 0rem;
+        width: 170px;
         height: 160px;
         background-color: var(--first-color)!important;
         border-radius: 50%;
@@ -1033,4 +1033,10 @@
     
     .container-fluid {
         margin-left: -1000px;
+    }
+    
+    div .img-home {
+        margin-top: -1px;
+        margin-left: 0;
+        width: 170px;
     }
