@@ -809,7 +809,7 @@
     .loader::before {
         content: '';
         position: absolute;
-        top: 7;
+        top: 3.5;
         right: 0;
         width: 2px;
         height: 65%;
